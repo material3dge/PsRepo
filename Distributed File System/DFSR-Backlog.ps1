@@ -1,3 +1,6 @@
+#Checks the current DFS-R Backlog of files pending sync
+#Outputs to console
+
 $RGroups = Get-WmiObject -Namespace "root\MicrosoftDFS" -Query "SELECT * FROM DfsrReplicationGroupConfig"
 $ComputerName=$env:ComputerName
 $Succ=0
